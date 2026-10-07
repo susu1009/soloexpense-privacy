@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoloExpense Privacy Policy</title>
+<meta name="description" content="How SoloExpense handles your data: what stays on your device, what is sent to third parties, and your choices.">
+<style>
+  :root {
+    --ink: #1B2024; --ink-2: #5D646A; --accent: #007A7C; --accent-soft: #C6F2F2;
+    --border: #DEE2E5; --bg: #F1F4F6; --surface: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #E7EBEE; --ink-2: #A3AAB0; --accent: #4FC3C5; --accent-soft: #123A3B;
+      --border: #2C3338; --bg: #14181B; --surface: #1B2024;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  article { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 28px 24px; }
+  h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; letter-spacing: -0.01em; }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p, li { color: var(--ink); }
+  .meta { color: var(--ink-2); font-size: 14px; margin: 0 0 24px; }
+  .summary { background: var(--accent-soft); border-radius: 14px; padding: 16px 18px; margin: 0 0 8px; }
+  .summary ul { margin: 6px 0 0; padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; margin: 8px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--border); }
+  th { color: var(--ink-2); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  a { color: var(--accent); }
+  code { font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<article>
+  <h1>Privacy Policy</h1>
+  <p class="meta">SoloExpense (Android, package <code>com.soloexpense</code>) · Effective date: October 7, 2026 · Last updated: October 7, 2026</p>
+
+  <p>This policy explains what information SoloExpense ("the app", "we", "us") handles, where it goes, and the
+  choices you have. The app is published by <strong>BenBen Inc</strong>, Hanoi, Vietnam, who is the
+  controller of the limited personal data described below. Questions: <a href="mailto:vanbavlkt.56@gmail.com">vanbavlkt.56@gmail.com</a>.</p>
+
+  <div class="summary">
+    <strong>The short version</strong>
+    <ul>
+      <li>There is no account and no cloud backup. Your expenses, clients, projects and receipt photos are stored only on your device.</li>
+      <li>Receipt text is read on your device. If AI-assisted scanning is used, the receipt photo is sent to our AI processing provider to extract the amounts, and is not used for anything else.</li>
+      <li>The free version shows ads (Google AdMob and AppLovin), which use device identifiers. Premium removes all ads.</li>
+      <li>We use Google Firebase for usage analytics, crash reports and remote configuration.</li>
+      <li>We do not sell your expense data, and we never send your list of expenses, clients or projects to anyone.</li>
+    </ul>
+  </div>
+
+  <h2>1. Information stored only on your device</h2>
+  <p>Everything you create in the app stays in the app's private storage on your phone:</p>
+  <ul>
+    <li>Expenses (amount, date, merchant, category, tax, payment method, notes, billable and deductible flags)</li>
+    <li>Clients, projects, categories and the merchant list used to improve scanning</li>
+    <li>Receipt photos you capture or pick from your gallery</li>
+    <li>Your settings (language, currency, date format, reminders) and usage counters such as how many free scans or exports you have used this month</li>
+  </ul>
+  <p>We have no server that receives this data, so we cannot see, recover or restore it. Uninstalling the app, or using
+  <em>Settings → Clear all data</em>, deletes it permanently.</p>
+  <p><strong>Exports and backups.</strong> When you export a PDF/CSV report or a data backup, the file is created on your device. It only
+  leaves your device if you choose to share or save it somewhere (email, a cloud drive, another app). What happens to it
+  then is governed by the service you choose.</p>
+
+  <h2>2. Receipt scanning</h2>
+  <h3>On-device text recognition</h3>
+  <p>Text on a receipt photo is read on your device using Google ML Kit. The photo and the recognised text are not sent to
+  us. ML Kit may send Google anonymous diagnostic and performance information about the library itself
+  (<a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a>).</p>
+  <h3>AI-assisted scanning</h3>
+  <p>To read difficult receipts (blurry, handwritten, unusual layouts), the app may use an AI vision service. Depending on the
+  app version and configuration, this happens either automatically when on-device scanning cannot find the total, or only
+  after you tap <em>Use AI</em> when asked. When it happens:</p>
+  <ul>
+    <li>The receipt photo, together with your category names, a list of merchant names from your device and your default currency (to help the AI choose the right values), is uploaded to a third-party AI processing provider, which stores the image temporarily in Google Firebase Storage and processes it with an AI model.</li>
+    <li>A random, anonymous identifier is created so the provider can operate the service. It is not linked to your name, email or Google account.</li>
+    <li>The result (merchant, date, amounts, tax, category suggestion) is returned to your device. Nothing is saved until you review and save the expense.</li>
+  </ul>
+  <p>Receipts can contain personal information, such as the last digits of a card, a store address or your name on an invoice.
+  If you do not want a receipt processed by AI, decline the prompt or enter the expense manually.</p>
+
+  <h2>3. Information collected by third-party services</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Service</th><th>Purpose</th><th>Data involved</th></tr></thead>
+    <tbody>
+      <tr><td>Google Firebase Analytics</td><td>Understand which screens and features are used, to improve the app</td><td>App-instance ID, screen views and button events (for example "scan clicked"), app version, device model, OS version, country/language, approximate session times. No expense amounts, merchant names or receipt content.</td></tr>
+      <tr><td>Google Firebase Crashlytics</td><td>Diagnose crashes and errors</td><td>Crash traces, device model, OS version, free memory/disk, installation UUID, the screen open at the time of the crash.</td></tr>
+      <tr><td>Google Firebase Remote Config</td><td>Turn features and ad placements on or off without an app update</td><td>Firebase installation ID, app version, country/language.</td></tr>
+      <tr><td>Google AdMob and AppLovin (free version only)</td><td>Show banner, native, rewarded and interstitial ads</td><td>Advertising ID, IP address, device and network information, ad interactions. Used for personalised ads only where you have consented or local law allows it.</td></tr>
+      <tr><td>Google User Messaging Platform</td><td>Ask for and store your ad consent (EEA, UK, Switzerland and regions with similar laws)</td><td>Your consent choices and region signal.</td></tr>
+      <tr><td>Google Play Billing</td><td>Process Premium purchases</td><td>Google handles payment. We receive only the purchase status and a purchase token; we never see your card details.</td></tr>
+      <tr><td>Google Forms (report an issue)</td><td>Receive bug reports and feedback you send</td><td>Only what you submit: a ticket ID, where the report came from, the issue type, your description and, if you choose, a reply email address.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Each provider handles data under its own privacy policy:
+  <a href="https://policies.google.com/privacy">Google</a> (Firebase, AdMob, ML Kit, Play, Forms) ·
+  <a href="https://www.applovin.com/privacy/">AppLovin</a>.</p>
+
+  <h2>4. Device permissions</h2>
+  <ul>
+    <li><strong>Camera</strong> to photograph receipts. Optional: you can refuse and pick a photo or enter expenses manually.</li>
+    <li><strong>Photos</strong> are accessed through the system photo picker, and only the image you select is shared with the app.</li>
+    <li><strong>Notifications</strong> for optional reminders, such as the weekend reminder to log receipts.</li>
+    <li><strong>Run at start-up</strong> (boot completed), to re-schedule your reminders and home-screen widget after the phone restarts.</li>
+    <li><strong>Internet and network state</strong> for ads, analytics, AI-assisted scanning and sending issue reports.</li>
+  </ul>
+
+  <h2>5. Legal bases (EEA, UK and Switzerland)</h2>
+  <ul>
+    <li><strong>Contract</strong>: processing a receipt with AI when you use that feature; processing Premium purchases.</li>
+    <li><strong>Consent</strong>: personalised advertising and the related storage of identifiers, collected through the consent form. You can change it at any time in <em>Settings → Privacy settings</em>.</li>
+    <li><strong>Legitimate interests</strong>: crash reporting, usage analytics and security, to keep the app working and improve it. You can object by contacting us.</li>
+  </ul>
+
+  <h2>6. Advertising choices</h2>
+  <ul>
+    <li>Change your ad consent at any time in <em>Settings → Privacy settings</em>.</li>
+    <li>Reset or delete your Advertising ID, or opt out of personalised ads, in Android <em>Settings → Privacy → Ads</em>.</li>
+    <li>Premium removes all ads.</li>
+  </ul>
+
+  <h2>7. Sale and sharing of personal information (US state laws)</h2>
+  <p>We do not sell your expense data, receipts, clients or projects. In the free version, ad partners receive device identifiers
+  and ad-interaction data to show and measure ads. Under some US state laws (for example California's CCPA/CPRA) this may be
+  considered "sharing" for cross-context behavioural advertising. You can opt out through <em>Settings → Privacy settings</em>,
+  by deleting your Advertising ID in Android settings, or by upgrading to Premium. We do not knowingly sell or share the
+  personal information of consumers under 16.</p>
+
+  <h2>8. Retention</h2>
+  <ul>
+    <li>Data on your device: until you delete it, clear app data or uninstall.</li>
+    <li>Analytics data: up to 14 months; crash reports: 90 days.</li>
+    <li>Issue reports: as long as needed to handle the report, and no longer than 24 months.</li>
+  </ul>
+
+  <h2>9. Your rights</h2>
+  <p>Depending on where you live (for example under the GDPR, UK GDPR, Canada's PIPEDA or US state laws), you may have the right
+  to access, correct, delete or port your personal data, to object to or restrict processing, to withdraw consent, and to
+  complain to your data protection authority. Because your expense data never leaves your device, you control it directly in
+  the app. For data held by Firebase or in issue reports, email <a href="mailto:vanbavlkt.56@gmail.com">vanbavlkt.56@gmail.com</a>. Include your
+  ticket ID if you sent a report, and we will respond within 30 days. We will not discriminate against you for exercising these rights.</p>
+
+  <h2>10. International transfers</h2>
+  <p>Our service providers may process data in the United States and other countries. Where required, transfers rely on
+  safeguards such as the European Commission's Standard Contractual Clauses or the EU–US Data Privacy Framework.</p>
+
+  <h2>11. Security</h2>
+  <p>App data is kept in Android's app-private storage, which other apps cannot read. Network traffic to our providers uses
+  HTTPS. No method of storage or transmission is completely secure, so keep your device protected with a screen lock.</p>
+
+  <h2>12. Children</h2>
+  <p>SoloExpense is a business tool for adults and is not directed to children under 13 (or under 16 in the EEA and UK). We do not
+  knowingly collect personal information from children. If you believe a child has sent us information, contact us and we will delete it.</p>
+
+  <h2>13. Changes to this policy</h2>
+  <p>We may update this policy as the app changes. We will change the "Last updated" date above and, for significant changes,
+  let you know in the app before they take effect.</p>
+
+  <h2>14. Contact</h2>
+  <p>BenBen Inc · Hanoi, Vietnam · <a href="mailto:vanbavlkt.56@gmail.com">vanbavlkt.56@gmail.com</a></p>
+</article>
+</main>
+</body>
+</html>
